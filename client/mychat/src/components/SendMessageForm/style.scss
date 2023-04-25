@@ -1,0 +1,41 @@
+@import "../../StyleVariables/variables.scss";
+
+.send-message-form {
+  form {
+    display: flex;
+    margin-top: 5px;
+    input {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid map-get($chatFormColors, "input-border-disabled-color");
+      border-radius: $borderRadius5;
+      margin-right: 10px;
+      &:focus {
+        outline: none;
+        border-color: map-get($chatFormColors, "primary-color");
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+          0 0 8px map-get($chatFormColors, "box-shadow-color");
+      }
+    }
+
+    button {
+      background-color: map-get($chatFormColors, "primary-color");
+      color: $whiteColor;
+      border: none;
+      padding: 5px 10px;
+      margin-right: 10px;
+      border-radius: $borderRadius5;
+      cursor: pointer;
+      &:hover {
+        background-color: map-get($chatFormColors, "secondary-color");
+      }
+      &:disabled {
+        background-color: map-get(
+          $chatFormColors,
+          "input-border-disabled-color"
+        );
+        cursor: not-allowed;
+      }
+    }
+  }
+}

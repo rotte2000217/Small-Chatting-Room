@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "8Sa+05YpCyMvADdvDZMFpy6sW1DAiYFxDQZsFPXKu7o=",
+  "Source": "ChatRoomServer",
+  "BasePath": "_content/ChatRoomServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

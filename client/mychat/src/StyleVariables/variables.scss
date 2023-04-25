@@ -1,0 +1,27 @@
+// COLORS
+$formColors: (
+  "primary-color": #571397dd,
+  "secondary-color": #a2a3a592,
+  "input-border-color": #5713977a,
+  "input-placeholder-color": #a2a3a5,
+);
+
+$chatFormColors: (
+  "primary-color": #571397dd,
+  "secondary-color": #410e71dd,
+  "input-border-disabled-color": #ccc,
+  "box-shadow-color": #5713977a,
+);
+
+$whiteColor: white;
+
+// BORDER
+$borderRadius5: 5px;
+$borderRadius10: 10px;
+
+// FUNCTIONS
+@mixin flexContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

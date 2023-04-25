@@ -1,0 +1,30 @@
+@import "../../StyleVariables/variables.scss";
+
+.room-title {
+  h1 {
+    color: map-get($formColors, "primary-color");
+  }
+}
+
+.chat-container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 10px;
+}
+
+.leave-room {
+  text-align: right;
+  margin: 10px 10px 0 0;
+
+  button {
+    background-color: #d9534f;
+    color: $whiteColor;
+    border: none;
+    padding: 5px 10px;
+    border-radius: $borderRadius5;
+    cursor: pointer;
+    &:hover {
+      background-color: #c9302c;
+    }
+  }
+}

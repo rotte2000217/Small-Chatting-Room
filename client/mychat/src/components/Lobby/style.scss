@@ -1,0 +1,48 @@
+@import "../../StyleVariables/variables.scss";
+
+.login-container {
+  h1 {
+    color: map-get($formColors, "primary-color");
+  }
+
+  hr {
+    border: none;
+    border-top: 2px solid map-get($formColors, "primary-color");
+    width: 30%;
+    margin: 10px auto 30px;
+  }
+}
+
+.login-form {
+  @include flexContainer();
+  flex-direction: column;
+
+  input {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid map-get($formColors, "input-border-color");
+    border-radius: $borderRadius10;
+    color: map-get($formColors, "primary-color");
+    &::placeholder {
+      color: map-get($formColors, "input-placeholder-color");
+    }
+    &:focus {
+      outline: none;
+      border-color: map-get($formColors, "primary-color");
+    }
+  }
+
+  button {
+    background-color: map-get($formColors, "primary-color");
+    color: $whiteColor;
+    padding: 10px 20px;
+    border-radius: $borderRadius5;
+    border: none;
+    cursor: pointer;
+    &:disabled {
+      background-color: map-get($formColors, "secondary-color");
+      cursor: not-allowed;
+    }
+  }
+}

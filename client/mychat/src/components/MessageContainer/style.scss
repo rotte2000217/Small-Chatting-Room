@@ -1,0 +1,26 @@
+@import "../../StyleVariables/variables.scss";
+
+.message-container {
+  text-align: right;
+  overflow-y: auto;
+  height: 500px;
+  background-color: $whiteColor;
+  border-radius: $borderRadius5;
+
+  .user-message {
+    margin: 10px 10px;
+
+    .message {
+      color: $whiteColor;
+      background-color: map-get($chatFormColors, "primary-color");
+      border-radius: 5px;
+      padding: 5px;
+      display: inline-block;
+    }
+
+    .from-user {
+      font-size: 12px;
+      color: #818181;
+    }
+  }
+}

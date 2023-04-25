@@ -1,0 +1,16 @@
+@import "../../StyleVariables/variables.scss";
+
+.user-list {
+  background-color: #424141;
+  border-radius: $borderRadius5;
+  padding: 10px;
+  color: $whiteColor;
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    color: #7aab08;
+  }
+}
